@@ -210,6 +210,7 @@ const ShimmerTitle = styled.h1`
   text-transform: uppercase;
   animation: glow 2s ease-in-out infinite alternate;
   color: var(--main-text-color);
+  font-family:'Kaushan Script';
   @keyframes glow {
     from {
       text-shadow: 0 0 20px var(--main-text-color);
@@ -438,14 +439,9 @@ const Home = (props: HomeProps) => {
         <main>
             <MainContainer>
                 <WalletContainer>
-                    <Logo><a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer"><img alt="" src="logo.png"/></a></Logo>
+                    {/* <Logo><a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer">Mysic Mimi</a></Logo> */}
                     <Menu>
-                        <li><a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer">Menu 1</a>
-                        </li>
-                        <li><a href="http://localhost:3000/" target="_blank"
-                               rel="noopener noreferrer">Menu 2</a></li>
-                        <li><a href="http://localhost:3000/" target="_blank"
-                               rel="noopener noreferrer">Menu 3</a></li>
+                        <li><a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer">Home</a></li>
                     </Menu>
                     <Wallet>
                         {wallet ?
@@ -453,17 +449,17 @@ const Home = (props: HomeProps) => {
                             <ConnectButton>Connect Wallet</ConnectButton>}
                     </Wallet>
                 </WalletContainer>
-                <ShimmerTitle>MINT IS LIVE !</ShimmerTitle>
+                <ShimmerTitle>MINTING COMING SOON !</ShimmerTitle>
                 <br/>
 
 
                 <MintContainer>
                     <DesContainer>
                         <NFT elevation={3}>
-                            <h2>My NFT</h2>
+                            <h2>Mystic Mimi Collection</h2>
                             <br/>
                             <div><Price label={isActive && whitelistEnabled && (whitelistTokenBalance > 0) ? (whitelistPrice + " SOL") : (price + " SOL")}/><Image
-                                src="cool-cats.gif"
+                                src="school.png"
                                 alt="NFT To Mint"/></div>
                             <br/>
                             {wallet && isActive && whitelistEnabled && (whitelistTokenBalance > 0) &&
@@ -533,31 +529,40 @@ const Home = (props: HomeProps) => {
                     </DesContainer>
                     <DesContainer>
                         <Des elevation={2}>
-                            <LogoAligner><img src="logo.png" alt=""></img><GoldTitle>TITLE 1</GoldTitle></LogoAligner>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
+                            <LogoAligner><GoldTitle>Whitelist Minting</GoldTitle></LogoAligner>
+                            <p>
+                                Everyone who is part of the whitelist will be able to mint a Mimi NFT 24-hours before it opens to the wider community. 
+                            </p>
+                            <p>
+                                Whitelist minting will automatically cost 1 minting token and will be 0.1 SOL cheaper than minting on the open launch. 
+                            </p>
+                            <p>
+                                Check out social media to learn how to get whitelisted and reap the benefits!
+                            </p>
                         </Des>
                         <Des elevation={2}>
-                            <LogoAligner><img src="logo.png" alt=""></img><GoldTitle>TITLE 2</GoldTitle></LogoAligner>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
+                            <LogoAligner><GoldTitle>Open Launch Minting</GoldTitle></LogoAligner>
+                            <p>
+                                ...
+                            </p>
+                            <p>
+                                ...
+                            </p>
+                            <p>
+                                ...
+                            </p>
                         </Des>
                         <Des elevation={2}>
-                            <LogoAligner><img src="logo.png" alt=""></img><GoldTitle>TITLE 3</GoldTitle></LogoAligner>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
+                            <LogoAligner><GoldTitle>Secondary Market</GoldTitle></LogoAligner>
+                            <p>
+                                ...
+                            </p>
+                            <p>
+                                ...
+                            </p>
+                            <p>
+                                ...
+                            </p>
                         </Des>
                     </DesContainer>
                 </MintContainer>

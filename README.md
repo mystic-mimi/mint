@@ -95,11 +95,11 @@ yarn build
 
 ```
 :root {
-  --main-background-color: #343A50;
-  --card-background-color: #51576D;
+  --main-background-color: #1a1e36;
+  --card-background-color: #111424;
   --card-background-lighter-color: #7A7F92;
   --main-text-color:#F7F6F4;
-  --title-text-color:#3CBA8B;
+  --title-text-color:#785dfa;
 }
 ```
 

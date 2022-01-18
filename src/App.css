@@ -1,18 +1,36 @@
 /* Customize your main colors in :root variables */
 :root {
-  --main-background-color: #343A50;
-  --card-background-color: #51576D;
-  --card-background-lighter-color: #7A7F92;
+  --main-background-color: #1a1e36;
+  --card-background-color: #111424;
+  --card-background-lighter-color: #111424;
   --main-text-color:#F7F6F4;
-  --title-text-color:#3CBA8B;
+  --title-text-color:#785dfa;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Chakra+Petch');
 
 body{
   background-color:var(--main-background-color);
 }
 
-h2, p{
+#canvas{
+  /* overflow: scroll; */
+  /* background-color: #1a1e36; */
+  position: fixed;
+  width: 100%;
+  height: 100%;	
+}
+
+h2 {
   color: var(--main-text-color);
+  font-family:'Kaushan Script','Montserrat', 'Helvetica Neue','Helvetica','Arial','sans-serif';
+
+}
+
+p, a {
+  color: var(--main-text-color);
+  font-family:'Chakra Petch','Arial';
 }
 
 h3{
